@@ -4,9 +4,7 @@ title = input("Введите заголовок заметки: ")
 content = input("Введите описание заметки: ")
 status = input("Введите статус заметки (например, 'Активна', 'Выполнена'): ")
 created_date = input("Введите дату создания заметки в формате 'день-месяц-год': ")
-formatted_date = created_date[:5]
 issue_date = input("Введите дату истечения заметки в формате 'день-месяц-год': ")
-formatted_date1 = issue_date[:5]
 
 
 # Выводим введенные данные
@@ -15,5 +13,5 @@ print("Имя пользователя:", username)
 print("Заголовок заметки:", title)
 print("Описание заметки:", content)
 print("Статус заметки:", status)
-print("Дата создания заметки:",formatted_date)
-print("Дата истечения заметки:",formatted_date1)
+print("Дата создания заметки:",created_date[:5])
+print("Дата истечения заметки:",issue_date[:5])
