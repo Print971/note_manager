@@ -3,14 +3,10 @@ username = input("Введите имя пользователя: ")
 title = input("Введите заголовок заметки: ")
 content = input("Введите описание заметки: ")
 status = input("Введите статус заметки (например, 'Активна', 'Выполнена'): ")
-
 created_date = input("Введите дату создания заметки в формате 'день-месяц-год': ")
-day,month,_= created_date.split(".")
-formatted_date = f"{day}.{month}."
-
+formatted_date = created_date[:5]
 issue_date = input("Введите дату истечения заметки в формате 'день-месяц-год': ")
-day,month,_= issue_date.split(".")
-formatted_date1 = f"{day}.{month}."
+formatted_date1 = issue_date[:5]
 
 
 # Выводим введенные данные
